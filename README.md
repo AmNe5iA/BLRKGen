@@ -1,5 +1,5 @@
 # BLRKGen (BitLocker Recovery Key Generator)
-Bash script to generate a list of all possible Legal BitLocker Recovery Keys
+Bash script to generate a list of all possible legal BitLocker Recovery Keys
 
 Usage:
 
