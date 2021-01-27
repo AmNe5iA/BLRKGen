@@ -3,7 +3,7 @@ Bash script to generate a list of all possible Legal BitLocker Recovery Keys
 
 Usage:
 
-"./BLRKGen" to output to the screen
+"./BLRKGen" to output to the terminal or to pipe to another program
 
 or
 
