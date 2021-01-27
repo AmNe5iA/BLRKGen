@@ -1,4 +1,32 @@
 #!/bin/bash
+# Enter the 6 digits for each known group of digits below.  For unknown groups leave as 0
+# nnnnnn-nnnnnn-nnnnnn-nnnnnn-nnnnnn-nnnnnn-nnnnnn-nnnnnn
+#   ^      ^      ^      ^      ^      ^      ^      ^
+#   |      |      |      |      |      |      |      |
+#   G1     G2     G3     G4     G5     G6     G7     G8
+#
+G1=0
+G2=0
+G3=0
+G4=0
+G5=0
+G6=0
+G7=0
+G8=0
+#
+# Now comment out the while loops for all the known groups of digits
+# Here is an exaple of commenting out the Group 1 (G1) While loop. 
+#Example starts below:
+#
+#G1=0
+#while (( G1 < 720896 ))
+#do
+# {...snip...}
+#	G1=$((G1+11))
+#done
+#Example ends above.
+#
+#
 G1=0
 while (( G1 < 720896 ))
 do
