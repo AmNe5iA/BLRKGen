@@ -1,0 +1,42 @@
+#!/bin/bash
+G0=0
+while [[ $G0 < 999999 ]]
+do
+	G1=0
+	while [[ $G1 < 999999 ]]
+	do
+		G2=0
+		while [[ $G2 < 999999 ]]
+		do
+			G3=0
+			while [[ $G3 < 999999 ]]
+			do
+				G4=0
+				while [[ $G4 < 999999 ]]
+				do
+					G5=0
+					while [[ $G5 < 999999 ]]
+					do
+						G6=0
+						while [[ $G6 < 999999 ]]
+						do
+							G7=0
+							while [[ $G7 < 999999 ]]
+							do
+								printf "%06d-%06d-%06d-%06d-%06d-%06d-%06d-%06d\n" $G0 $G1 $G2 $G3 $G4 $G5 $G6 $G7
+								G7=$((G7+11))
+							done
+							G6=$((G6+11))
+						done
+						G5=$((G5+11))
+					done
+					G4=$((G4+11))
+				done
+				G3=$((G3+11))
+			done
+			G2=$((G2+11))
+		done
+		G1=$((G1+11))
+	done
+	G0=$((G0+11))
+done
