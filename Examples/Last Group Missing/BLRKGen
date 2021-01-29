@@ -1,0 +1,70 @@
+#!/bin/bash
+# Enter the 6 digits for each known group of digits below.  For unknown groups leave as 0
+# nnnnnn-nnnnnn-nnnnnn-nnnnnn-nnnnnn-nnnnnn-nnnnnn-nnnnnn
+#   ^      ^      ^      ^      ^      ^      ^      ^
+#   |      |      |      |      |      |      |      |
+#   G1     G2     G3     G4     G5     G6     G7     G8
+#
+G1=45133
+G2=655864
+G3=439560
+G4=637021
+G5=380501
+G6=115995
+G7=260117
+G8=0
+#
+# Now comment out the while loops for all the known groups of digits
+# Here is an exaple of commenting out the Group 1 (G1) While loop. 
+#Example starts below:
+#
+#G1=0
+#while (( G1 < 720896 ))
+#do
+# {...snip...}
+#	G1=$((G1+11))
+#done
+#Example ends above.
+#
+#
+#G1=0
+#while (( G1 < 720896 ))
+#do
+#	G2=0
+#	while (( G2 < 720896 ))
+#	do
+#		G3=0
+#		while (( G3 < 720896 ))
+#		do
+#			G4=0
+#			while (( G4 < 720896 ))
+#			do
+#				G5=0
+#				while (( G5 < 720896 ))
+#				do
+#					G6=0
+#					while (( G6 < 720896 ))
+#					do
+#						G7=0
+#						while (( G7 < 720896 ))
+#						do
+							G8=0
+							while (( G8 < 720896 ))
+							do
+								printf "%06d-%06d-%06d-%06d-%06d-%06d-%06d-%06d\n" $G1 $G2 $G3 $G4 $G5 $G6 $G7 $G8
+								G8=$((G8+11))
+							done
+#							G7=$((G7+11))
+#						done
+#						G6=$((G6+11))
+#					done
+#					G5=$((G5+11))
+#				done
+#				G4=$((G4+11))
+#			done
+#			G3=$((G3+11))
+#		done
+#		G2=$((G2+11))
+#	done
+#	G1=$((G1+11))
+#done
